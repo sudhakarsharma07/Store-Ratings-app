@@ -3,7 +3,7 @@
 
 const BASE = window.location.hostname === "localhost"
   ? "http://localhost:5000"
-  : "https://store-ratings-app-00.onrender.com/";
+  : "https://store-ratings-backend.onrender.com";
 
 
 export async function request(path, opts = {}) {

@@ -1,7 +1,10 @@
 // Dynamically choose backend URL based on environment
-const BASE = window.location.hostname === 'localhost'
-  ? 'http://localhost:5000'
-  : 'https://store-ratings-app-t2jc.vercel.app';
+
+
+const BASE = window.location.hostname === "localhost"
+  ? "http://localhost:5000"
+  : "https://store-ratings-app-00.onrender.com/";
+
 
 export async function request(path, opts = {}) {
   const headers = opts.headers || {};
